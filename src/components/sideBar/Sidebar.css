@@ -1,0 +1,119 @@
+
+.sidebar.open {
+  transform: translateX(0);  
+}
+ 
+.menu li svg {
+  margin-right: 10px;
+}
+.dark-mode .menu li:hover {
+  background-color: #357937; /* green for dark mode */
+  color: #98E19B ;
+}
+.add-list {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.add-list svg {
+  margin-right: 10px;
+}
+ 
+.menu li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 8px;
+  cursor: pointer; 
+  /* Makes the items clickable */
+}
+
+.menu li:hover {
+  background-color: #ddd; /* Change this to your desired hover background color */
+  color: #357937;
+}
+
+ 
+.sidebar {
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-top: 70px;  
+  width: 250px;  
+  background-color: #438670 ;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  position: fixed;  
+  height: 100%;
+  top: 0;  
+  left: 0;  
+  z-index: 10;  
+}
+
+.sidebar.closed {
+  transform: translateX(-400px);  
+}
+ 
+.profile img {
+  border-radius: 50%;
+  margin-right: 10px;
+  position: absolute;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  transform: translateX(-50%);
+  top: -20px;  
+}
+.profile {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50%; 
+  margin-top: 40px;/* Adjust to ensure text does not overlap the image */
+ 
+}
+.dark-mode .menu {
+background-color:#232323;
+color: #E2E2E2;
+}
+.dark-mode .taskchart {
+  background-color:#232323;
+  color: #E2E2E2;
+  }
+.dark-mode .add-list{
+  background-color:#232323;
+  color: #E2E2E2;
+  }
+  .dark-mode .task-summary{
+    background-color:#232323;
+    color: #E2E2E2;
+    }
+.box {
+  background-color: white;
+  color: #333;
+  padding: 15px;
+  margin: 5px;
+  margin-bottom: 20px;
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+body.dark-mode .sidebar {
+  background-color: #2C2C2C;
+  color: #fff;
+}
+.profile .profile-info {
+  margin-left: 60px;
+}
+
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+}
