@@ -1,0 +1,7 @@
+@media (max-width: 640px) {
+    .todo_item_edit {
+        width: 130px;    
+        height: 30px;    
+        margin-right: 10%; 
+    }
+}

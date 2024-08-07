@@ -11,6 +11,7 @@ import { FiEdit } from "react-icons/fi";
 import { useState } from "react";
 import { MdOutlineSave } from "react-icons/md";
 import Tooltip from "@mui/material/Tooltip";
+import './TodoItem.css';
 
 const TodoItem = ({ todo, index }) => {
   const dispatch = useDispatch();
@@ -30,7 +31,7 @@ const TodoItem = ({ todo, index }) => {
         <span className="mr-4 text-gray-500">{index + 1}.</span>
         {isEditing ? (
           <input
-            className="mr-4 border px-2 py-1 rounded"
+            className="mr-4 border px-2 py-1 rounded todo_item_edit" 
             value={newText}
             onChange={(e) => setNewText(e.target.value)}
           />
