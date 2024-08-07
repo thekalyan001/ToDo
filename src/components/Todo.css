@@ -1,0 +1,21 @@
+.dark-mode .searchtodo_dark { 
+    color: #ffffff;
+  }
+
+  @media (max-width: 640px) {
+    .search_todo_mediaqr {
+        width: 100px;    
+        height: 30px;    
+        margin-right: 30%; 
+    }
+    
+    .search_todo_mediaqr input {
+        padding: 7px;     
+        font-size: 11px;  
+    }
+
+    .search_todo_mediaqr button {
+        padding: 5px;     /* Smaller padding for the button */
+        font-size: 11px;  /* Smaller font size for the button */
+    }
+  }

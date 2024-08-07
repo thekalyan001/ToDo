@@ -5,6 +5,7 @@ import FilterButtons from "./FilterButtons";
 import { BsSearch, BsPlus } from "react-icons/bs";
 import { addTodo, updateSearchTerm } from "../redux/slice/todoSlice"; // Updated import path
 import Tooltip from "@mui/material/Tooltip";
+import './Todo.css';
 
 const Todo = () => {
   const todos = useSelector((state) => state.todos.todos); // Access todos from the todos slice
@@ -41,11 +42,11 @@ const Todo = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto sm:mt-8 p-4 rounded  todo_darkMode" style={{ backgroundColor: '#26644f', borderRadius: '10px' }}>
+    <div className="max-w-4xl mx-auto sm:mt-8 p-4 rounded " style={{ backgroundColor: '#26644f', borderRadius: '10px' }}>
       <h2 className="mt-3 ml-2 mb-6 text-2xl font-bold text-center uppercase">
         My Todo 🕑
       </h2>
-      <div className="flex items-center mb-4 searchtodo_dark">
+      <div className="flex items-center mb-4">
         <input
           id="addTodoInput"
           className="flex-grow p-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
@@ -75,7 +76,7 @@ const Todo = () => {
       )}
       <div className="flex flex-row sm:flex-row items-center justify-between gap-4">
         <FilterButtons />
-        <div className="flex items-center mb-4  searchtodo_dark">
+        <div className="flex items-center mb-4 mt-3 search_todo_mediaqr">
           <input
             className="flex-grow p-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
             style={{ borderRadius: '10px' }}

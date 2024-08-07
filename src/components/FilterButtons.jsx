@@ -25,7 +25,7 @@ const FilterButtons = () => {
   return (
     <div className="flex space-x-4 items-center filter-btn">
       <select
-        className="text-sm px-2 py-1 rounded border border-gray-300 focus:outline-none"
+        className="text-sm px-1 py-1.5 rounded border border-gray-300 focus:outline-none sm:px-4 md:px-6 lg:px-8"
         value={currentFilter}
         onChange={(e) => handleFilter(e.target.value)}
       >
@@ -37,7 +37,8 @@ const FilterButtons = () => {
       {/* Toggle button for marking all complete/incomplete */}
       <Tooltip title={allCompleted ? "Mark All Incomplete" : "Mark All Complete"} arrow placement="top">
         <button
-          className="text-sm px-2 py-1 bg-purple-500 text-white rounded ml-2"
+          className="text-sm px-2 py-2 bg-purple-500 text-white rounded ml-2"
+          style={{ marginLeft:'4px' }}
           onClick={handleMarkAll}
         >
           {allCompleted ? <MdRadioButtonUnchecked /> : <MdFactCheck />}

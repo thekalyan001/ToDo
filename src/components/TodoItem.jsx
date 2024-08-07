@@ -51,7 +51,9 @@ const TodoItem = ({ todo, index }) => {
         )}
       </div>
 
-      <div className="space-x-3 ml-8">
+      <div className="space-x-3 ml-8"
+      style={{display: 'flex', marginLeft: '1px', padding: '3px'}}
+      >
         {!todo.completed && (
           <Tooltip title="Mark as Completed" arrow>
             <button
