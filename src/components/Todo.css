@@ -10,6 +10,7 @@
     }
     
     .search_todo_mediaqr input {
+        width: 120px;
         padding: 7px;     
         font-size: 11px;  
     }
